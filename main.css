@@ -838,3 +838,400 @@
 /* CLASSES FOOTERS #########################*/
 /********************************************/
 
+/* HTML A METTRE SUR LE SITE PLUS TARD : 
+<footer class="footer-basic">
+    <div class="basic_container">
+      <div class="basic_row">
+        <div class="basic_col">
+          <h3>A propos</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit lectus. Aliquam at blandit dui. 
+            Sed iaculis quam nisi, in egestas leo tempus a.
+          </p>
+        </div>
+        <div class="basic_col">
+          <h3>Liens utiles</h3>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="basic_col">
+          <h3>Suivez-nous</h3>
+          <ul class="basic_social-icons list-reset">
+            <li><a href="#" target="_blank"><img src="" alt="img logo réseaux"></a></li>
+            <li><a href="#" target="_blank"><img src="" alt="img logo réseaux"></a></li>
+            <li><a href="#" target="_blank"><img src="" alt="img logo réseaux"></a></li>
+            <li><a href="#" target="_blank"><img src="" alt="img logo réseaux"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="basic_copyright">
+        <p>Copyright &copy; 2023. Tous droits réservés.</p>
+    </div>
+</footer>
+*/
+/* FOOTER-BASIC ########################### */
+.footer-basic {
+    background-color: #333;
+    color: #fff;
+    padding: 2.5em 0;
+  }
+  
+  .basic_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .basic_row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .basic_col {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+@media (min-width: 768px) {
+    .basic_col {
+      width: 33.3333%;
+    }
+}
+  
+  .basic_col h3 {
+    margin-bottom: 1.2em;
+  }
+  
+  .basic_col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .basic_col li {
+    margin-bottom: 10px;
+  }
+  
+  .basic_col a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .basic_social-icons li a {
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+    
+    .basic_social-icons li a:hover {
+        color: #333;
+    }
+    
+    .basic_copyright {
+        margin-top: 1em;
+        background-color: #222;
+        padding: 1.3em 0;
+    }
+    
+    .basic_copyright p {
+        margin: 0;
+        text-align: center;
+        color: #999;
+    }
+
+
+/* HTML A METTRE SUR LE SITE PLUS TARD : 
+<footer class="footer-minimum">
+    <div>
+      <p>Copyright © 2023 MonSite. Tous droits réservés.</p>
+    </div>
+</footer>
+*/
+/* FOOTER-MINIMUM ########################### */
+.footer-minimum {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+    .footer-minimum p {
+        margin: 0;
+        text-align: center;
+    }
+
+@media (max-width: 768px) {
+    .footer-minimum {
+      padding: 10px 0;
+    }
+  
+        .footer-minimum p {
+        font-size: 0.8em;
+        }
+  }
+  
+@media (min-width: 768px) and (max-width: 992px) {
+    .footer-minimum {
+      padding: 15px 0;
+    }
+  
+        .footer-minimum p {
+        font-size: 0.9em;
+        }
+  }
+  
+@media (min-width: 992px) {
+    .footer-minimum {
+      padding: 20px 0;
+    }
+    
+        .footer-minimum p {
+        font-size: 1em;
+        }
+  }
+    
+
+/* HTML A METTRE SUR LE SITE PLUS TARD : 
+<footer class="footer-vertical">
+    <div class="vertical_nav">
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Produits</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="vertical_social">
+      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
+      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
+      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
+      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
+    </div>
+    <div class="vertical_copyright">
+      <p>Copyright © 2020 MonSite. Tous droits réservés.</p>
+    </div>
+</footer>
+*/
+/* FOOTER-VERTICAL ########################### */
+.footer-vertical {
+    background-color: #222;
+    color: #fff;
+    padding: 2em 0;
+  }
+  
+  .vertical_nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .vertical_nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .vertical_nav li {
+    padding: 0em 1em 0.5em 1em;
+  }
+  
+  .vertical_nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .vertical_social {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .vertical_social a {
+    color: #fff;
+    padding: 1em 0.5em 1em 0.5em;
+  }
+  
+  .vertical_copyright {
+    text-align: center;
+  }
+  
+  .vertical_copyright p {
+    margin: 0;
+    font-size: 0.8em;
+  }
+
+@media (max-width: 768px) {
+  .vertical_nav ul {
+    margin-bottom: 0.5em;
+  }
+
+  .vertical_social {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .vertical_nav {
+    flex-direction: row;
+  }
+
+  .vertical_nav ul {
+    margin-bottom: 1em;
+  }
+
+  .vertical_nav li {
+    margin-right: 1.2em;
+    margin-bottom: 0;
+  }
+
+  .vertical_social {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .vertical_nav {
+    flex-direction: row;
+    font-size: 1.1em;
+  }
+
+  .vertical_nav ul {
+    margin-bottom: 1eù;
+  }
+
+  .vertical_nav li {
+    margin-right: 1.2em;
+    margin-bottom: 1em;
+  }
+
+  .vertical_social {
+    margin-bottom: 1em;
+  }
+
+  .vertical_copyright p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+}
+
+
+/* HTML A METTRE SUR LE SITE PLUS TARD : 
+<footer class="footer-rgpd">
+    <div class="rgpd_social">
+      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
+      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
+      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
+      <a href="#" target="_blank"><img src="" alt="logo réseaux"></a>
+    </div>
+    <div class="rgpd">
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">Conditions d'utilisation</a>
+    </div>
+    <div class="rgpd_copyright">
+      <p>Copyright © 2020 MonSite. Tous droits réservés.</p>
+    </div>
+</footer>
+*/
+/* FOOTER-RGPD ########################### */
+.footer-rgpd {
+    background-color: #333;
+    color: #fff;
+    padding: 2em 0;
+  }
+  
+  .rgpd_social {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0em 1em 0em;
+  }
+  
+  .rgpd_social a {
+    color: #fff;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  
+  .rgpd {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+  }
+  
+  .rgpd a {
+    color: #fff;
+    font-size: 0.9em;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    padding: 0em 1em;
+  }
+  
+  .rgpd a:hover {
+    color: #0077ff;
+  }
+  
+  .rgpd_copyright {
+    text-align: center;
+  }
+  
+  .rgpd_copyright p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+
+@media (max-width: 768px) {
+    .rgpd_social {
+      margin-bottom: 0.8em;
+    }
+  
+    .rgpd {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .rgpd a {
+      margin-bottom: 1em;
+      font-size: 0.8em;
+    }
+
+    .rgpd_copyright p {
+        font-size: 0.8em;
+      }
+  }
+  
+@media (min-width: 768px) and (max-width: 992px) {
+  .rgpd_social {
+    margin-bottom: 1em;
+  }
+
+  .rgpd {
+    flex-direction: row;
+  }
+
+  .rgpd a {
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 992px) {
+  .rgpd_social {
+    margin-bottom: 1em;
+  }
+
+  .rgpd {
+    flex-direction: row;
+  }
+
+  .rgpd a {
+    margin-bottom: 1em;
+  }
+}
+
+
