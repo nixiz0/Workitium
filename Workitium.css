@@ -332,13 +332,14 @@
 /* HTML Utilisation :
 <div class="txt_img_side">
     <div class="txt_img_side-item">
-        <img src="" alt="">
+        <img src="" alt="image">
     </div>
     <div class="txt_img_side-item">
         <span> lorem ipsum </span>
     </div>
-</div> 
--> Permet de placer une image à côté d'un texte <- */
+</div>
+*/
+/*-> Permet de placer une image à côté d'un texte <- */
 .txt_img_side {
     display: flex;
     justify-content: space-evenly;
@@ -358,6 +359,67 @@
         .txt_img_side-item span {
 
         }
+
+@media (max-width: 600px) {
+  .txt_img_side {
+    flex-direction: column;
+  }
+}
+
+.txt_img_side-item {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.txt_img_side-item img {
+    width: 10rem; /* A REDIMENSIONNER (selon l'image) */
+    height: auto;
+}
+
+@media (max-width: 600px) {
+  .txt_img_side-item img {
+    width: 6rem;
+  }
+}
+
+.txt_img_side-item span {
+
+}
+
+
+/* HTML Utilisation :
+<div class="three-div">
+    <div class="three-div-item">
+        <img src="" alt="image">
+        <p> Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="three-div-item">
+        <img src="" alt="image">
+        <p> Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="three-div-item">
+        <img src="" alt="image">
+        <p> Lorem ipsum dolor sit amet.</p>
+    </div>
+</div>  
+*/
+/*-> Permet de placer 3 div à côté et Responsive <- */
+.three-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  .three-div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.three-div-item {
+    text-align: center;
+    margin: 1em;
+}
 
 
 
@@ -834,6 +896,91 @@
 }
 
 
+
+/********************************************/
+/* CLASSES DES FORMULAIRES #################*/
+/********************************************/
+
+/* HTML A METTRE SUR LE SITE PLUS TARD :
+<form class="form-basic">
+    <div class="basic_form-group">
+      <label for="name">Nom</label>
+      <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
+    </div>
+    <div class="basic_form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+    </div>
+    <div class="basic_form-group">
+      <label for="message">Message</label>
+      <textarea class="form-control" id="message" placeholder="Entrez votre message"></textarea>
+    </div>
+    <button type="submit">Envoyer</button>
+</form>
+*/
+/* FORM-BASIC ############################ */
+.form-basic {
+    width: 90%;
+    max-width: 25em;
+    margin: 2rem auto;
+  }
+  
+  .basic_form-group {
+    margin-bottom: 2em;
+  }
+  
+  .basic_form-group label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .basic_form-group input[type="text"],
+  .basic_form-group input[type="email"],
+  .basic_form-group textarea {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-basic button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .form-basic button[type="submit"]:active {
+    font-size: 0.9rem;
+    background-color: #0a5bb2;
+  }
+
+@media (max-width: 600px) {
+.form-basic {
+    width: 80%;
+    padding: 0.2em;
+    font-size: 0.6rem
+  }
+
+  .form-basic button[type="submit"] {
+    font-size: 0.9rem;
+  }
+
+  .form-basic button[type="submit"]:active {
+    font-size: 0.8rem;
+    background-color: #0a5bb2;
+  }
+}
+
+
+
 /********************************************/
 /* CLASSES FOOTERS #########################*/
 /********************************************/
@@ -1233,5 +1380,4 @@
     margin-bottom: 1em;
   }
 }
-
 
