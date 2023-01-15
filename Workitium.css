@@ -229,104 +229,6 @@
 
 
 /****************************************************************************/
-/* CLASSES POSITIONNEMENT DE BLOCK ########################################*/
-/***************************************************************************/
-
-/* HTML Utilisation :
-<div class="txt_img_side">
-    <div class="txt_img_side-item">
-        <img src="" alt="image">
-    </div>
-    <div class="txt_img_side-item">
-        <span> lorem ipsum </span>
-    </div>
-</div>
-*/
-/*-> Permet de placer une image à côté d'un texte <- */
-.txt_img_side {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1rem;
-}
-
-    .txt_img_side-item {
-        padding: 1.2rem;
-        text-align: center;
-    }
-
-        .txt_img_side-item img {
-            width: 10rem; /* A REDIMENSIONNER (selon l'image) */
-            height: auto;
-        }
-
-        .txt_img_side-item span {
-
-        }
-
-@media (max-width: 600px) {
-  .txt_img_side {
-    flex-direction: column;
-  }
-}
-
-.txt_img_side-item {
-    padding: 1.2rem;
-    text-align: center;
-}
-
-.txt_img_side-item img {
-    width: 10rem; /* A REDIMENSIONNER (selon l'image) */
-    height: auto;
-}
-
-@media (max-width: 600px) {
-  .txt_img_side-item img {
-    width: 6rem;
-  }
-}
-
-.txt_img_side-item span {
-
-}
-
-
-/* HTML Utilisation :
-<div class="three-div">
-    <div class="three-div-item">
-        <img src="" alt="image">
-        <p> Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="three-div-item">
-        <img src="" alt="image">
-        <p> Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div class="three-div-item">
-        <img src="" alt="image">
-        <p> Lorem ipsum dolor sit amet.</p>
-    </div>
-</div>  
-*/
-/*-> Permet de placer 3 div à côté et Responsive <- */
-.three-div {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-@media (max-width: 600px) {
-  .three-div {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.three-div-item {
-    text-align: center;
-    margin: 1em;
-}
-
-
-
-/****************************************************************************/
 /* CLASSES DES ANIMATIONS #################################################*/
 /***************************************************************************/
 
@@ -1148,6 +1050,104 @@
   .rgpd a {
     margin-bottom: 1em;
   }
+}
+
+
+
+/****************************************************************************/
+/* CLASSES POSITIONNEMENT DE BLOCK ########################################*/
+/***************************************************************************/
+
+/* HTML Utilisation :
+<div class="txt_img_side">
+    <div class="txt_img_side-item">
+        <img src="" alt="image">
+    </div>
+    <div class="txt_img_side-item">
+        <span> lorem ipsum </span>
+    </div>
+</div>
+*/
+/*-> Permet de placer une image à côté d'un texte <- */
+.txt_img_side {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+  .txt_img_side-item {
+      padding: 1.2rem;
+      text-align: center;
+  }
+
+      .txt_img_side-item img {
+          width: 10rem; /* A REDIMENSIONNER (selon l'image) */
+          height: auto;
+      }
+
+      .txt_img_side-item span {
+
+      }
+
+@media (max-width: 600px) {
+.txt_img_side {
+  flex-direction: column;
+}
+}
+
+.txt_img_side-item {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.txt_img_side-item img {
+  width: 10rem; /* A REDIMENSIONNER (selon l'image) */
+  height: auto;
+}
+
+@media (max-width: 600px) {
+.txt_img_side-item img {
+  width: 6rem;
+}
+}
+
+.txt_img_side-item span {
+
+}
+
+
+/* HTML Utilisation :
+<div class="three-div">
+  <div class="three-div-item">
+      <img src="" alt="image">
+      <p> Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="three-div-item">
+      <img src="" alt="image">
+      <p> Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div class="three-div-item">
+      <img src="" alt="image">
+      <p> Lorem ipsum dolor sit amet.</p>
+  </div>
+</div>  
+*/
+/*-> Permet de placer 3 div à côté et Responsive <- */
+.three-div {
+display: flex;
+justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+.three-div {
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+.three-div-item {
+  text-align: center;
+  margin: 1em;
 }
 
 
