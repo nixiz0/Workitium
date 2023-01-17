@@ -1670,6 +1670,7 @@ justify-content: space-evenly;
 .btn-hover {
   background: #3b4148;
   color: #fff;
+  border-radius: 5%;
   min-width: 130px;
   height: 40px;
   padding: 5px 10px;
