@@ -1483,6 +1483,10 @@ justify-content: space-evenly;
     height: 35px;
     font-size: 0.9rem;
   }
+
+  .btn-slide-up:active {
+    font-size: 0.8rem;
+  }
 }
 
 
@@ -1537,6 +1541,10 @@ justify-content: space-evenly;
     min-width: 110px;
     height: 35px;
     font-size: 0.9rem;
+  }
+
+  .btn-slide-down:active {
+    font-size: 0.8rem;
   }
 }
 
@@ -1593,6 +1601,10 @@ justify-content: space-evenly;
     height: 35px;
     font-size: 0.9rem;
   }
+
+  .btn-slide-left:active {
+    font-size: 0.8rem;
+  }
 }
 
 
@@ -1647,5 +1659,53 @@ justify-content: space-evenly;
     min-width: 110px;
     height: 35px;
     font-size: 0.9rem;
+  }
+
+  .btn-slide-right:active {
+    font-size: 0.8rem;
+  }
+}
+
+
+.btn-hover {
+  background: #3b4148;
+  color: #fff;
+  min-width: 130px;
+  height: 40px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #495057;
+  font-size: 1rem;
+}
+
+.btn-hover:hover {
+  background: #fff;
+  color: #495057
+}
+
+.btn-hover:active {
+  background: rgb(182, 181, 181);
+  color: #25282b;
+  transition: none;
+  font-size: 0.9rem;
+}
+
+@media (max-width:600px) {
+  .btn-hover {
+    min-width: 110px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .btn-hover:active {
+    background: rgb(182, 181, 181);
+    color: #25282b;
+    transition: none;
+    font-size: 0.8rem;
   }
 }
