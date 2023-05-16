@@ -9,7 +9,38 @@
 </head>
 <body class="reset-html" style="background-color: rgb(84, 84, 84);">
     
-            
+    <div class="nav_extend-off">
+        <img id="toggle-navbar" src="" alt="icon nav deploy">
+    </div>
+    <nav class="nav_extend_none nav_extend">
+        <div class="nav_extend_img">
+            <img id="remove-navbar" src="" alt="icon nav deploy">
+        </div>
+        <div class="nav_extend_ul">
+            <ul>
+                <a href="#"><li>Accueil </li></a>
+                <a href="#"><li>Agenda</li></a>
+                <a href="#"><li>Produits</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="#"><li>Nous Rejoindre</li></a>
+            </ul>
+        </div>
+    </nav>
+<script>
+    let navBtnOn = document.getElementById('toggle-navbar');
+let navBtnOff = document.getElementById('remove-navbar');
+let navbar = document.querySelector('.nav_extend_none');
 
+function toggleNavbar() {
+    if (navbar.classList.contains('nav_extend_none')) {
+        navbar.classList.toggle('nav_extend_show');
+    }
+    navbar.classList.toggle('nav_extend_none');
+  }
+  
+navBtnOn.addEventListener('click', toggleNavbar);
+navBtnOff.addEventListener('click', toggleNavbar);
+
+</script>
 </body>
 </html>
